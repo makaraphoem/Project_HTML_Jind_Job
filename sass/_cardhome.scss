@@ -1,0 +1,39 @@
+
+.text-job p{
+    font-size: 40px;
+    text-align: center;
+
+}
+.photo-find-job{
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+   
+   
+
+}
+.card{
+
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    
+  
+}
+.card img{
+    width: 280px;
+  
+    
+}
+.photo-text{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.photo-text img{
+    height: 40vh;
+    border-radius: 10px;
+   
+}

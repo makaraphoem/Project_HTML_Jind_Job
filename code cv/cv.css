@@ -1,0 +1,62 @@
+main{
+    display: flex;justify-content: space-between;
+}
+form {
+    width: 101%;
+    height: 115vh;
+    margin-top: -8px;
+    margin-right: 150px;
+    color: #51a2c0;
+    background: #515c5c;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  h1{
+    margin-left: 30px;
+  }
+  form input {
+    width: 96.6%;
+    padding: 10px;
+  }
+  form a {
+    text-decoration: none;
+    padding: 10px;
+  }
+  form .button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+
+  }
+  form button {
+    margin: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background: #60B3D1;
+  }
+  
+  .name {
+    margin: 30px;
+  }
+  .name input {
+    padding: 10px;
+  }
+  
+  .ph-num, .num, .email {
+    margin-top: 15px;
+    margin: 30px;
+  }
+  
+  body {
+    height: 100vh;
+    background-image: url(project-HTML/project-HTML/photoes/IT.jpg);
+    background-size: cover;
+  }
+  
+  .container {
+    margin: auto;
+  }
+  
+  .logo img {
+    width: 500px;
+  }/*

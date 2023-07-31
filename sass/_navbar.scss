@@ -32,9 +32,7 @@ nav{
                 @include responsive(tablet){
                     font-size: 8px;
                     margin: 10px;
-                }
-              
-              
+                } 
             }
             a:hover{
                 color: $coloricon;
@@ -53,8 +51,7 @@ nav{
         @include responsive(tablet){
             width: 30px;
             border-radius: 15px;
-        }
-        
+        } 
     }
     span{
         font-weight: bold;
@@ -62,8 +59,6 @@ nav{
         @include responsive(tablet){
             display:none;
         }
-
-
     }
 
 }

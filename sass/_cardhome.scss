@@ -1,39 +1,76 @@
-
-.text-job p{
-    font-size: 40px;
-    text-align: center;
-
+.text-job{
+  text-align: center;
 }
-.photo-find-job{
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-   
-   
 
-}
-.card{
+.card-wrapper {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  flex-wrap: wrap;
 
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    
-  
-}
-.card img{
-    width: 280px;
-  
-    
-}
-.photo-text{
-    font-weight: bold;
-    display: flex;
+  @include responsive(tablet){
+    flex-direction: row;
+    height: auto;
+  }
+
+  @include responsive(phone){
     flex-direction: column;
-    align-items: center;
-    
+    height: auto;
+  }
 }
-.photo-text img{
-    height: 40vh;
-    border-radius: 10px;
-   
+
+.card-custom {
+  display: flex;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  height: 180%; /* adjust height for smaller screens */
+  width: 40%; /* adjust width for tablet screens */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+
+  @include responsive(tablet){
+    margin-left: 20px;
+  }
+
+  @include responsive(phone){
+    margin-left: 0px;
+  }
+}
+
+.card-custom:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-custom img {
+  width: 30%;
+  height: 90px; 
+  object-fit: cover; 
+  padding: 10px;
+  box-shadow: 0 8px 16px 0 rgba(193, 192, 192, 0.2);
+}
+
+.card-body {
+  padding: 10px;
+  margin-top: -40px;
+  margin-bottom: 70px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text,
+.card-subtitle {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) { /* adjust max-width value as needed */
+  .card-custom {
+    width: 100%;
+    height: 200%;
+  }
 }
